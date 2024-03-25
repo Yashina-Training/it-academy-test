@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header,
+.footer {
+  padding: 3rem 1rem;
+  background: #add8e6;
+  max-width: 100%;
+}
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2e39f9;
+}
+.main {
+}
+.left-side {
+  background: #f0e68c;
+  float: left;
+  width: 20rem;
+}
+.subcaption {
+}
+.content {
+}
+.caption {
+}
+.image {
+}
+.text {
+}
+.footer {
+  clear: both;
+}
