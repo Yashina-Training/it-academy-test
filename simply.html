@@ -7,14 +7,48 @@
   </head>
   <body>
     <script>
-      for (let i = 1; i <= 1000; i++) {
+      for (let i = 1; i <= 10; i++) {
         for (let j = 1; j < i; j++) {
-          // if (i % j !== 0 ) {
-          //   console.log(i);
-          // }
-          console.log("i-" + i + "; " + "j-" + j + "; " + (i % j));
+          if (i % j != 0 && i != 1 && i % 2 != 0) {
+            console.log(i);
+          }
+          // console.log("i-" + i + "; " + "j-" + j + "; " + (i % j));
         }
       }
+
+      // function innerLoop(num) {
+      //   for (let j = 2; j < num; j++) {
+      //     if (num % j === 0) {
+      //       return false;
+      //     }
+      //     return num !== 1;
+      //   }
+      // }
+
+      // function externalLoop(value) {
+      //   for (let i = 2; i <= value; i++) {
+      //     if (innerLoop(i)) {
+      //       console.log(i);
+      //     }
+      //   }
+      // }
+
+      // externalLoop(100);
+
+      // function isPrime(num) {
+      //   for (let i = 2; i < num; i++) {
+      //     if (num % i === 0) return false;
+      //   }
+      //   return num !== 1;
+      // }
+
+      // function printPrimes(max) {
+      //   for (let i = 2; i <= max; i++) {
+      //     if (isPrime(i)) console.log(i);
+      //   }
+      // }
+
+      // printPrimes(100);
     </script>
   </body>
 </html>
