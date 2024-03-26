@@ -8,9 +8,11 @@ body {
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+.header {
+  padding: 2vw;
+}
 .header,
 .footer {
-  padding: 3rem 1rem;
   background: #add8e6;
   max-width: 100%;
 }
@@ -18,24 +20,91 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #2e39f9;
+  font-size: 3rem;
 }
 .main {
+  overflow: hidden;
+  position: relative;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-y;
+  background-position: top right;
+  background-size: 10%;
 }
 .left-side {
-  background: #f0e68c;
+  width: 320px;
   float: left;
-  width: 20rem;
+  position: relative;
+  padding: 2vw 1vw;
+}
+.left-side-bg {
+  background: #f0e68c;
+  width: 320px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.nav li {
+  list-style-position: inside;
+  margin-bottom: 0.5vw;
 }
 .subcaption {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 2vw;
 }
 .content {
+  padding: 2vw 1vw 2vw 340px;
 }
 .caption {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2vw;
 }
 .image {
+  max-width: 100%;
+  float: left;
+  margin: 0 1vw 1vw 0;
 }
 .text {
+  max-width: 100%;
+  margin-bottom: 1vw;
 }
+
 .footer {
   clear: both;
+  padding: 3vw;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .left-side {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+    background: #f0e68c;
+  }
+
+  .left-side-bg {
+    display: none;
+  }
+
+  .content {
+    padding: 2vw 1vw;
+    max-width: 100%;
+    width: 100%;
+  }
+  .caption {
+    font-size: 2rem;
+  }
+  .image {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
 }
