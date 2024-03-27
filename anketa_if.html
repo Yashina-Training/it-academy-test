@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>№3</title>
+</head>
+
+<body>
+  <script>
+    let surname = prompt('Ваша фамилия?');
+    let name = prompt('Ваше имя?');
+    let patronymic = prompt('Ваше отчество?');
+    let age = prompt('Ваш возраст?');
+    let ageInDays = age * 365;
+    let genderConfirm = confirm('Ваш пол - мужской?');
+    let gender;
+    let retirementAge;
+
+    if (genderConfirm) {
+      gender = 'мужской';
+    } else {
+      gender = 'женский';
+    }
+
+    if (genderConfirm && age < 63) {
+      retirementAge = 'нет';
+    } else if (genderConfirm && age >= 63) {
+      retirementAge = 'да'
+    } else if (!genderConfirm && age < 58) {
+      retirementAge = 'нет'
+    } else if (!genderConfirm && age >= 58) {
+      retirementAge = 'да'
+    }
+
+    alert('ФИО: ' + surname + ' ' + name + ' ' + patronymic + '\r\n'
+      + 'Возраст, лет: ' + age + '\r\n'
+      + 'Возраст, дней: ' + ageInDays + '\r\n'
+      + 'Пол: ' + gender + '\r\n'
+      + 'Пенсионный возраст: ' + retirementAge);
+  </script>
+
+</body>
+
+</html>
