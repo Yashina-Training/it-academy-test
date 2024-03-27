@@ -4,24 +4,33 @@
   box-sizing: border-box;
 }
 
+/* html,
+body {
+  height: 100%;
+} */
+
 body {
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
 .header {
   padding: 2vw;
 }
+
 .header,
 .footer {
   background: #add8e6;
   max-width: 100%;
 }
+
 .heading {
   text-transform: uppercase;
   text-align: center;
   color: #2e39f9;
   font-size: 3rem;
 }
+
 .main {
   overflow: hidden;
   position: relative;
@@ -29,17 +38,20 @@ body {
   background-repeat: repeat-y;
   background-position: top right;
   background-size: 10%;
+  /* height: 100%; */
 }
+
 .left-side {
   width: 320px;
   float: left;
-  /* position: relative; */
+  position: relative;
   padding: 2vw 1vw;
   background: #f0e68c;
-  -webkit-box-shadow: 0px 100vh 0px 0px rgba(240, 230, 140, 1);
-  -moz-box-shadow: 0px 100vh 0px 0px rgba(240, 230, 140, 1);
-  box-shadow: 0px 100vh 0px 0px rgba(240, 230, 140, 1);
+  /* min-height: 100%; */
+  box-shadow: 0px 50vh 0px 0px #f0e68c;
+
 }
+
 .left-side-bg {
   background: #f0e68c;
   width: 320px;
@@ -48,19 +60,24 @@ body {
   top: 0;
   bottom: 0;
 }
+
+
 .nav li {
   list-style-position: inside;
   margin-bottom: 0.5vw;
 }
+
 .subcaption {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 2vw;
 }
+
 .content {
   padding: 2vw 1vw;
   overflow: hidden;
 }
+
 .caption {
   font-weight: bold;
   font-size: 2.5rem;
@@ -68,18 +85,20 @@ body {
   text-align: center;
   margin-bottom: 2vw;
 }
+
 .image {
   max-width: 100%;
   float: left;
   margin: 0 1vw 1vw 0;
 }
+
 .text {
   max-width: 100%;
   margin-bottom: 1vw;
 }
 
 .footer {
-  clear: both;
+  /* clear: both; */
   padding: 3vw;
 }
 
@@ -87,9 +106,11 @@ body {
   .heading {
     font-size: 2rem;
   }
+
   .main {
     background: none;
   }
+
   .left-side {
     max-width: 100%;
     width: 100%;
@@ -108,9 +129,11 @@ body {
     max-width: 100%;
     width: 100%;
   }
+
   .caption {
     font-size: 2rem;
   }
+
   .image {
     float: none;
     margin: 0;
