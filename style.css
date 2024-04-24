@@ -34,10 +34,10 @@ body {
 .main {
   overflow: hidden;
   position: relative;
-  background: url(img/bg.png);
-  background-repeat: repeat-y;
-  background-position: top right;
-  background-size: 5%;
+  background: url(img/bg.png), url(img/left-bg.png);
+  background-repeat: repeat-y, repeat-y;
+  background-position: top right, top left;
+  background-size: 5%, 320px;
   /* height: 100%; */
 }
 
@@ -46,9 +46,9 @@ body {
   float: left;
   position: relative;
   padding: 2vw 1vw;
-  background: #f0e68c;
+  /* background: #f0e68c; */
   /* min-height: 100%; */
-  box-shadow: 0px 50vh 0px 0px #f0e68c;
+  /* box-shadow: 0px 50vh 0px 0px #f0e68c; */
 
 }
 
@@ -118,6 +118,7 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    background: #f0e68c;
   }
 
   .left-side-bg {
