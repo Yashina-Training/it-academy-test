@@ -4,51 +4,39 @@
   box-sizing: border-box;
 }
 
-/* html,
-body {
-  height: 100%;
-} */
 
 body {
-  width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .header {
-  padding: 2vw;
+  padding: 25px;
 }
 
 .header,
 .footer {
   background: #add8e6;
-  max-width: 100%;
 }
 
 .heading {
   text-transform: uppercase;
   text-align: center;
   color: #2e39f9;
-  font-size: 3rem;
+  font-size: 40px;
 }
 
 .main {
   overflow: hidden;
-  position: relative;
   background: url(img/bg.png), url(img/left-bg.png);
   background-repeat: repeat-y, repeat-y;
   background-position: top right, top left;
-  background-size: 5%, 320px;
-  /* height: 100%; */
+  background-size: 100px, 320px;
 }
 
 .left-side {
   width: 320px;
   float: left;
-  position: relative;
-  padding: 2vw 1vw;
-  /* background: #f0e68c; */
-  /* min-height: 100%; */
-  /* box-shadow: 0px 50vh 0px 0px #f0e68c; */
+  padding: 25px 15px;
 
 }
 
@@ -64,47 +52,45 @@ body {
 
 .nav li {
   list-style-position: inside;
-  margin-bottom: 0.5vw;
+  margin-bottom: 10px;
 }
 
 .subcaption {
   font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 2vw;
+  font-size: 26px;
+  margin-bottom: 25px;
 }
 
 .content {
-  padding: 2vw 1vw;
+  padding: 25px 15px;
   overflow: hidden;
 }
 
 .caption {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 35px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 25px;
 }
 
 .image {
-  max-width: 100%;
   float: left;
-  margin: 0 1vw 1vw 0;
+  margin: 0 15px 15px 0;
 }
 
 .text {
-  max-width: 100%;
-  margin-bottom: 1vw;
+  margin-bottom: 15px;
 }
 
 .footer {
-  /* clear: both; */
-  padding: 3vw;
+  clear: both;
+  padding: 40px;
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
   .main {
@@ -112,8 +98,7 @@ body {
   }
 
   .left-side {
-    max-width: 100%;
-    width: 100%;
+    /* width: 100%; */
     float: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -126,18 +111,16 @@ body {
   }
 
   .content {
-    padding: 2vw 1vw;
-    max-width: 100%;
-    width: 100%;
+    padding: 20px 10px;
   }
 
   .caption {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
   .image {
     float: none;
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
   }
 }
