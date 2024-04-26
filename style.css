@@ -124,3 +124,39 @@ body {
     /* width: 100%; */
   }
 }
+
+/* 5.1+ */
+.colors {
+  overflow: hidden;
+  background: url(img/bg-violet.png), url(img/bg-blue-red.png);
+  background-position: right top, 20% top;
+  background-repeat: repeat-y, repeat-y;
+  font-size: 22px;
+
+}
+
+.balls {
+  overflow: hidden;
+  background: url(/img/balls-right.png),
+    url(/img/balls-right.png),
+    url(/img/balls-left.png),
+    url(/img/balls-left.png),
+    url(/img/ball.png),
+    url(/img/ball.png);
+  background-position: right top, right bottom, 20% top, 20% bottom, left top, left bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.left {
+  width: 20%;
+  float: left;
+}
+
+.center {
+  margin: 0 200px 0 20%;
+}
+
+.right {
+  width: 200px;
+  float: right;
+}
