@@ -137,12 +137,12 @@ body {
 
 .balls {
   overflow: hidden;
-  background: url(/img/balls-right.png),
-    url(/img/balls-right.png),
-    url(/img/balls-left.png),
-    url(/img/balls-left.png),
-    url(/img/ball.png),
-    url(/img/ball.png);
+  background: url(img/balls-right.png),
+    url(img/balls-right.png),
+    url(img/balls-left.png),
+    url(img/balls-left.png),
+    url(img/ball.png),
+    url(img/ball.png);
   background-position: right top, right bottom, 20% top, 20% bottom, left top, left bottom;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
