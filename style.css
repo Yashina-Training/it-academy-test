@@ -232,3 +232,9 @@ body {
     top left,
     bottom left;
 }
+
+.frame-content-plus-1 {
+  text-align: center;
+  border: 100px solid #000;
+  border-image: url(img/ramka.png) 94 97 94 97 repeat;
+}
