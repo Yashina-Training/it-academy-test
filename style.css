@@ -198,3 +198,37 @@ body {
   padding: 150px;
   text-align: center;
 }
+
+.frame-content-plus {
+  padding: 150px;
+  text-align: center;
+  background-image:
+    url(img/ramka-top-left.png),
+    url(img/ramka-bottom-left.png),
+    url(img/ramka-top-right.png),
+    url(img/ramka-bottom-right.png),
+    url(img/ramka-left.png),
+    url(img/ramka-right.png),
+    url(img/ramka-top.png),
+    url(img/ramka-botom.png);
+
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    repeat-y,
+    repeat-y,
+    repeat-x,
+    repeat-x;
+
+  background-position:
+    top left,
+    bottom left,
+    top right,
+    bottom right,
+    top left,
+    top right,
+    top left,
+    bottom left;
+}
