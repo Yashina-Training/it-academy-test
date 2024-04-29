@@ -160,3 +160,41 @@ body {
   width: 200px;
   float: right;
 }
+
+/* ramka */
+.left-bg {
+  background: url(img/ramka-left.png) repeat-y top left;
+}
+
+.right-bg {
+  background: url(img/ramka-right.png) repeat-y top right;
+}
+
+.top {
+  background: url(img/ramka-top.png) repeat-x top left;
+}
+
+.bottom {
+  background: url(img/ramka-botom.png) repeat-x bottom left;
+}
+
+.top-left {
+  background: url(img/ramka-top-left.png) no-repeat top left;
+}
+
+.bottom-left {
+  background: url(img/ramka-bottom-left.png) no-repeat bottom left;
+}
+
+.top-right {
+  background: url(img/ramka-top-right.png) no-repeat top right;
+}
+
+.bottom-right {
+  background: url(img/ramka-bottom-right.png) no-repeat bottom right;
+}
+
+.frame-content {
+  padding: 150px;
+  text-align: center;
+}
