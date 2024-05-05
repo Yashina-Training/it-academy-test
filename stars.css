@@ -1,0 +1,31 @@
+.stars {
+  display: inline-block;
+}
+
+.star {
+  display: inline-block;
+}
+
+.colored {
+  display: none;
+}
+
+.stars:hover {
+  cursor: pointer;
+}
+
+.stars:hover .colored {
+  display: inline-block;
+}
+
+.stars:hover .transparent {
+  display: none;
+}
+
+.star:hover~.star .transparent {
+  display: inline-block;
+}
+
+.star:hover~.star .colored {
+  display: none;
+}
