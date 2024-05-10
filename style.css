@@ -89,16 +89,21 @@ body {
 }
 
 @media (max-width: 768px) {
-  .heading {
-    font-size: 30px;
+
+  .header,
+  .footer {
+    display: none;
   }
 
+  /* .heading {
+    font-size: 30px;
+  } */
   .main {
     background: none;
   }
 
   .left-side {
-    /* width: 100%; */
+    width: 100%;
     float: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -121,7 +126,12 @@ body {
   .image {
     float: none;
     margin: 0;
-    /* width: 100%; */
+    width: 100%;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 
