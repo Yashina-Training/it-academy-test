@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -37,7 +36,6 @@ body {
   width: 320px;
   float: left;
   padding: 25px 15px;
-
 }
 
 .left-side-bg {
@@ -48,7 +46,6 @@ body {
   top: 0;
   bottom: 0;
 }
-
 
 .nav li {
   list-style-position: inside;
@@ -87,9 +84,17 @@ body {
   clear: both;
   padding: 40px;
 }
-
+.fixed-block {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #90ee90;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+}
 @media (max-width: 768px) {
-
   .header,
   .footer {
     display: none;
@@ -142,19 +147,17 @@ body {
   background-position: right top, 20% top;
   background-repeat: repeat-y, repeat-y;
   font-size: 22px;
-
 }
 
 .balls {
   overflow: hidden;
-  background: url(img/balls-right.png),
-    url(img/balls-right.png),
-    url(img/balls-left.png),
-    url(img/balls-left.png),
-    url(img/ball.png),
+  background: url(img/balls-right.png), url(img/balls-right.png),
+    url(img/balls-left.png), url(img/balls-left.png), url(img/ball.png),
     url(img/ball.png);
-  background-position: right top, right bottom, 20% top, 20% bottom, left top, left bottom;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: right top, right bottom, 20% top, 20% bottom, left top,
+    left bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
 }
 
 .left {
@@ -212,35 +215,16 @@ body {
 .frame-content-plus {
   padding: 150px;
   text-align: center;
-  background-image:
-    url(img/ramka-top-left.png),
-    url(img/ramka-bottom-left.png),
-    url(img/ramka-top-right.png),
-    url(img/ramka-bottom-right.png),
-    url(img/ramka-left.png),
-    url(img/ramka-right.png),
-    url(img/ramka-top.png),
+  background-image: url(img/ramka-top-left.png), url(img/ramka-bottom-left.png),
+    url(img/ramka-top-right.png), url(img/ramka-bottom-right.png),
+    url(img/ramka-left.png), url(img/ramka-right.png), url(img/ramka-top.png),
     url(img/ramka-botom.png);
 
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    repeat-y,
-    repeat-y,
-    repeat-x,
-    repeat-x;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y,
+    repeat-y, repeat-x, repeat-x;
 
-  background-position:
-    top left,
-    bottom left,
-    top right,
-    bottom right,
-    top left,
-    top right,
-    top left,
-    bottom left;
+  background-position: top left, bottom left, top right, bottom right, top left,
+    top right, top left, bottom left;
 }
 
 .frame-content-plus-1 {
